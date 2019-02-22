@@ -1,0 +1,23 @@
+#include <stdio.h>
+void value(int *p )
+{
+  if ( *p > 25 )
+  {
+  printf ("Eligible for taking loan");
+}
+else 
+{
+    printf ("not eligible");
+}
+}
+int main()
+{
+char name;
+int age;
+printf("Enter the name:");
+scanf("%s",&name);
+printf("Enter your age:");
+scanf("%d",&age);
+value(&age);
+return 0;
+}
