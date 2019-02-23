@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+  int r,c,a[10][10], *ptr;
+ptr = & a[0][0];
+printf("Enter the no of rows:");
+scanf("%d",&r);
+printf("Enter the no of columns:");
+scanf("%d",&c);
+int total= r*c;
+printf("Enter the rows and column of 1st matrix:");
+for (int i=0;i<r;i++)
+{
+    for (int j=0;j<c;j++)
+    {
+        scanf ("%d",(ptr+i+j));
+    }
+}
+printf("Enter the rows and column of 1st matrix:");
+for (int i=0;i<r;i++)
+{
+    for (int j=0;j<c;j++)
+    {
+        printf("%d",*(ptr+i+j));
+    }
+}
+return 0;
+}
