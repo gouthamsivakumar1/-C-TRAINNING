@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+struct class
+{   char name [20];
+    int class [30];
+    int roll[10];
+    
+};
+
+int main()
+{
+struct class obj;
+struct class *obj1=&obj;
+printf("Enter your Name:");
+scanf("%s",& (*obj1->name));
+printf("Enter your Class:");
+scanf("%d",& (*obj1->class));//type in numeric values
+printf("Enter your Roll no:");
+scanf("%d",& (*obj1->roll));
+printf("Your NAME is %s\n",obj1->name);
+printf("Your CLASS is %d\n",(*obj1->class));
+printf("Your roll number is %d\n",(*obj1->roll));
+    return 0;
+}
