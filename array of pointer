@@ -4,7 +4,7 @@ void compare (int *a[],int i)
 {
   for(i = 0; i < 3; i++)
     {
-        printf("Address = %d\t Value = %d\n", a[i], *a[i]);
+        printf("Address = %p\t Value = %d\n", a[i], *a[i]);
     }
 }
  
