@@ -1,0 +1,22 @@
+#include<stdio.h>
+#define SIZE 10
+void compare (int *a[],int i)
+{
+  for(i = 0; i < 3; i++)
+    {
+        printf("Address = %d\t Value = %d\n", a[i], *a[i]);
+    }
+}
+ 
+int main()
+{
+    int *arrop[3];
+    int a = 10, b = 20, c = 50, i;
+ 
+    arrop[0] = &a;
+    arrop[1] = &b;
+    arrop[2] = &c;
+ compare (arrop,6);
+  
+    return 0;
+}
